@@ -5,14 +5,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"getting-to-philosophy/firstlink"
 	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"strconv"
-
-	"firstlink"
 )
 
 type QueryParams struct {
