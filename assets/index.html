@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Skiapoden</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<h1>Skiapoden</h1>
+		<p>Microservice to play the <em>Wikipedia Philosophy Game</em></p>
+		<ol>
+			<li>Pick a (random) Wikipedia Article.</li>
+			<li>Click on the first link to another article.</li>
+			<li>Count the «hops» needed to reach the article <em>Philosophy</em>.</li>
+		</ol>
+		<p>This Microservice helps you playing the game automatically.</p>
+        <p>The assumptions what the <em>first link</em> of an article is are:</p>
+        <ol>
+            <li>The link is within an article paragraph.</li>
+            <li>The link is <em>not</em> within parentheses or brackets.</li>
+            <li>The link does <em>not</em> contain an anchor (<span class="tt">#</span>).</li>
+            <li>The link does not refer to a file (<span class="tt">File:...</span>)</li>
+            <li>The link is of the form <span class="tt">/wiki/...</span></li>
+            <li>The link is not within a table or a box.</li>
+        </ol>
+        <p>Of the links matching those conditions, the <em>first</em> is choosen.</p>
+		<h2>Instructions</h2>
+        <p><em>First</em>, create a CSV file without column headers with these columns:</p>
+        <ol>
+            <li>Wikipedia Language: <span class="tt">de, en, fr, etc.</span></li>
+            <li>Source Article: <span class="tt">Christmas, Kebab, Mexico, etc.</span></li>
+            <li>Target Article: <span class="tt">Philosophy</span> for our use-case,
+                but anything else goes, too.</li>
+            <li>Expected hops from source to target article: <span class="tt">7</span>
+                is the goal, but any positive number goes.</li>
+        </ol>
+        <p>For example:</p>
+        <pre>de,Tatsache,Philosophie,7
+en,Cheese,Philosophy,7
+fr,Langue,Philosophie,7
+ru,Достопримечательность,Философия,7
+de,Zürich,Philosophie,7
+en,Pig,Philosophy,7
+fr,Gridley_(Iowa),Philosophie,7
+ru,Наука,Философия,7
+de,Zwillingsparadoxon,Philosophie,7
+fr,Journalisme,Philosophie,7
+ru,Афины,Философия,7
+de,Käse,Philosophie,7
+en,Competition,Philosophy,7
+fr,Agriculture_du_Tarn,Philosophie,7
+ru,Университет,Философия,7</pre>
+        <p><em>Second</em>, in the <em>Test Submission Form</em> below,
+        select the file thus created for the upload.</p>
+        <p><em>Third</em>, decide on the <em>Hops Limit</em>, i.e. after how
+        many clicks to the next article link without finding the target article
+        should the process be stopped for the current test case (not the whole
+        test series).</p>
+        <p><em>Fourth</em>, submit the form to start the tests.</p>
+        <p><em>Fifth</em>, wait for the created report to be ready for download.</p>
+        <p>The created report has the same columns like the uploaded CSV file, plus the following columns:</p>
+        <ol>
+            <li>The determined hop count, how many links really had to be
+                followed to reach the target article, or <span class="tt">-1</span>
+                in case of an error.</li>
+            <li>A message indicating:
+                <ul>
+                    <li><span class="tt">success</span>:
+                        expected hop count = determined hop count</li>
+                    <li><span class="tt">failure</span>:
+                        expected hop count ≠ determined hop count</li>
+                    <li><span class="tt">[error message]</span>:
+                        loop detected, first link not found, etc.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Test Submission Form</h3>
+		<div>
+			<form action="/csvForm" method="POST" enctype="multipart/form-data">
+				<p>
+					<input name="csvFile" type="file" accept="text/*,.csv">
+					<label for="hopsLimit">Hops Limit</label>
+					<input id="hopsLimit" name="hopsLimit" type="number"
+						min="1" max="99" value="20" style="width: 4em;">
+					<input type="submit">
+				</p>
+			</form>
+		</div>
+        <h2>API Endpoints</h2>
+		<h3 class="tt">/csv</h3>
+		<p>This endpoint accepts a CSV list of test cases, containing the
+		Wikipedia language, the source and target article, and the expected
+		number of hops needed to reach the target article:</p>
+        <pre>de,Bier,Philosophie,14
+en,Beer,Philosophy,12
+fr,Bière,Philosophie,11
+ru,Пиво,Философия,7</pre>
+		<p>The endpoint is called like this, make sure to use the
+		<span class="tt">--data-binary</span> option to preserve the line
+		breaks in the CSV:</p>
+		<pre>curl -X POST https://skiapoden.herokuapp.com/csv --data-binary @tests.csv</pre>
+		<p>A CSV list is returned, indicating the number of actual hops needed,
+		plus the result of the test indicated as «success» (expected and actual
+		hop counts equals), «failure» (otherwise), or the error message, if
+		something went wrong:</p>
+        <pre>de,Bier,Philosophie,14,14,success
+en,Beer,Philosophy,12,18,failure
+fr,Bière,Philosophie,11,11,success
+ru,Пиво,Философия,7,18,failure</pre>
+        <h3 class="tt">/hopcount</h3>
+        <p>This endpoint accepts a JSON structure of test cases, executes
+        them, and returns a JSON report of test results. Usage:</p>
+        <pre>curl -X POST https://skiapoden.herokuapp.com/hopcount -d @hopcount.json</pre>
+        <p>With the input <span class="tt">hopcount.json</span> looking like this:</p>
+        <pre>[
+  {
+    "lang": "de",
+    "source": "Medizin",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "en",
+    "source": "Competition",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "fr",
+    "source": "Pigeon",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "ru",
+    "source": "Достопримечательность",
+    "target": "Философия",
+    "expected": 7
+  }
+]</pre>
+        <p>And the report coming back like this:</p>
+        <pre>[
+  {
+    "lang": "de",
+    "source": "Medizin",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": 7,
+    "result": "success"
+  },
+  {
+    "lang": "en",
+    "source": "Competition",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": -1,
+    "result": "error: unable to extract first link of https://en.wikipedia.org/wiki/Entity"
+  },
+  {
+    "lang": "fr",
+    "source": "Pigeon",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": 6,
+    "result": "failure"
+  },
+  {
+    "lang": "ru",
+    "source": "Достопримечательность",
+    "target": "Философия",
+    "expected": 7,
+    "actual": 18,
+    "result": "failure"
+  }
+]</pre>
+		<h3 class="tt">/firstlink</h3>
+		<p>This endpoint extracts the first article link of a Wikipedia article.</p>
+		<p>It accepts a JSON structure containing the Wikipedia language and article name:</p>
+        <pre>{
+    "language": "en",
+    "article": "ACME"
+}</pre>
+		<p>The service can be called on the <span class="tt">/firstlink</span>
+		endpoint using the <span class="tt">POST</span> method:</p>
+        <pre>$ curl -X POST https://skiapoden.herokuapp.com/firstlink -d '{ "language": "en", "article": "Heroku" }'</pre>
+		<p>The response will be a JSON structure:</p>
+        <pre>{
+    "firstLink": "https://en.wikipedia.org/wiki/Platform_as_a_service"
+}</pre>
+		<p><small>© 2019 by the <a href="https://github.com/skiapoden/">Skiapoden</a> team, using the
+		<a href="https://github.com/patrickbucher/firstlink">firstlink</a>
+		module and <a href="https://golang.org/">Go</a>.</small></p>
+	</body>
+</html>

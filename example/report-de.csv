@@ -1,0 +1,100 @@
+de,Aachen,Philosophie,7,18,failure
+de,Airbus,Philosophie,7,-1,error: loop detected
+de,Abdecker,Philosophie,7,9,failure
+de,Abendessen,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Babyboom,Philosophie,7,12,failure
+de,Babylon,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Wissen': Get https://de.wikipedia.org/wiki/Wissen: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Backofen,Philosophie,7,8,failure
+de,Backgammon,Philosophie,7,-1,error: loop detected
+de,Cabrio,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Soziologie': Get https://de.wikipedia.org/wiki/Soziologie: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Camping,Philosophie,7,14,failure
+de,Cappuccino,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Interdisziplinäre_Wissenschaft': Get https://de.wikipedia.org/wiki/Interdisziplin%C3%A4re_Wissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Calcium,Philosophie,7,-1,error: loop detected
+de,Dachs,Philosophie,7,20,failure
+de,Dammbruch,Philosophie,7,-1,error: loop detected
+de,Dampfbad,Philosophie,7,-1,error: loop detected
+de,Dickdarm,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Edelmetall,Philosophie,7,-1,error: loop detected
+de,Edinburgh,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Effizienz,Philosophie,7,-1,error: unable to extract first link of https://de.wikipedia.org/wiki/Effizienz
+de,Esoterik,Philosophie,7,1,failure
+de,Fabrik,Philosophie,7,17,failure
+de,Fachwerk,Philosophie,7,14,failure
+de,Faultier,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Wissenschaft': Get https://de.wikipedia.org/wiki/Wissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Feuerwehr,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Ostslawische_Sprachen': Get https://de.wikipedia.org/wiki/Ostslawische_Sprachen: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Gameboy,Philosophie,7,11,failure
+de,Ganges,Philosophie,7,17,failure
+de,Gebiss,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Chemie': Get https://de.wikipedia.org/wiki/Chemie: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Geburtstag,Philosophie,7,19,failure
+de,Hackbraten,Philosophie,7,7,success
+de,Haubitze,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Halskette,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Naturwissenschaft': Get https://de.wikipedia.org/wiki/Naturwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Heiserkeit,Philosophie,7,12,failure
+de,Idylle,Philosophie,7,-1,error: loop detected
+de,Imbissbude,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Zelle_(Biologie)': Get https://de.wikipedia.org/wiki/Zelle_(Biologie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Impfung,Philosophie,7,12,failure
+de,Indonesien,Philosophie,7,13,failure
+de,Jagdhütte,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Januar,Philosophie,7,9,failure
+de,Jodeln,Philosophie,7,15,failure
+de,Jubiläum,Philosophie,7,-1,error: loop detected
+de,Kabelfernsehen,Philosophie,7,11,failure
+de,Kamin,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Chemie': Get https://de.wikipedia.org/wiki/Chemie: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Kegelclub,Philosophie,7,-1,error: loop detected
+de,Keilriemen,Philosophie,7,15,failure
+de,Lampensockel,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Indogermanen': Get https://de.wikipedia.org/wiki/Indogermanen: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Lazarett,Philosophie,7,10,failure
+de,Leberwurst,Philosophie,7,7,success
+de,Leguan,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Tatsache': Get https://de.wikipedia.org/wiki/Tatsache: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Macht,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Begriff_(Philosophie)': Get https://de.wikipedia.org/wiki/Begriff_(Philosophie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Mahlzeit,Philosophie,7,20,failure
+de,Medizin,Philosophie,7,7,success
+de,Meilenstein,Philosophie,7,6,failure
+de,Merowinger,Philosophie,7,16,failure
+de,Nachhilfe,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Wissensgebiet': Get https://de.wikipedia.org/wiki/Wissensgebiet: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Nagasaki,Philosophie,7,-1,error: loop detected
+de,Nelkengewächse,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Wissen': Get https://de.wikipedia.org/wiki/Wissen: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Netflix,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Soziologie': Get https://de.wikipedia.org/wiki/Soziologie: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Oberschicht,Philosophie,7,12,failure
+de,Oblate,Philosophie,7,7,success
+de,Olivetti,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Interdisziplinäre_Wissenschaft': Get https://de.wikipedia.org/wiki/Interdisziplin%C3%A4re_Wissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Ombudsmann,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzeller': Get https://de.wikipedia.org/wiki/Einzeller: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Paris,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Begriff_(Philosophie)': Get https://de.wikipedia.org/wiki/Begriff_(Philosophie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Pechvogel,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Wissen': Get https://de.wikipedia.org/wiki/Wissen: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Perzeptoin,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Perzeptoin': 404 Not Found
+de,Pharao,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Tausch_(Soziologie)': Get https://de.wikipedia.org/wiki/Tausch_(Soziologie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Quader,Philosophie,7,14,failure
+de,Quartal,Philosophie,7,16,failure
+de,Quellcode,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzelwissenschaft': Get https://de.wikipedia.org/wiki/Einzelwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Querformat,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Fachgebiet': Get https://de.wikipedia.org/wiki/Fachgebiet: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Radiator,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzelwissenschaft': Get https://de.wikipedia.org/wiki/Einzelwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Rücksitz,Philosophie,7,18,failure
+de,Reagenzglas,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Naturwissenschaft': Get https://de.wikipedia.org/wiki/Naturwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Radargerät,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Tausch_(Soziologie)': Get https://de.wikipedia.org/wiki/Tausch_(Soziologie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Sabotage,Philosophie,7,13,failure
+de,Saxophon,Philosophie,7,17,failure
+de,Scharlatan,Philosophie,7,6,failure
+de,Schiffbruch,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzelwissenschaft': Get https://de.wikipedia.org/wiki/Einzelwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Tabak,Philosophie,7,14,failure
+de,Teebaumöl,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Interdisziplinäre_Wissenschaft': Get https://de.wikipedia.org/wiki/Interdisziplin%C3%A4re_Wissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Talmud,Philosophie,7,15,failure
+de,Thermometer,Philosophie,7,14,failure
+de,Uhrzeit,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzelwissenschaft': Get https://de.wikipedia.org/wiki/Einzelwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Ukraine,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Begriff_(Philosophie)': Get https://de.wikipedia.org/wiki/Begriff_(Philosophie): write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Unsinn,Philosophie,7,-1,error: loop detected
+de,Uran,Philosophie,7,-1,error: loop detected
+de,Vaseline,Philosophie,7,11,failure
+de,Vegetarier,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Einzelwissenschaft': Get https://de.wikipedia.org/wiki/Einzelwissenschaft: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Vögel,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Vorstand,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Chemische_Reaktion': Get https://de.wikipedia.org/wiki/Chemische_Reaktion: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Wachsfigur,Philosophie,7,-1,error: loop detected
+de,Walfang,Philosophie,7,20,failure
+de,Webstuhl,Philosophie,7,-1,error: loop detected
+de,Xylophon,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Sachverhalt': Get https://de.wikipedia.org/wiki/Sachverhalt: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Xubuntu,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Philosophiegeschichte': Get https://de.wikipedia.org/wiki/Philosophiegeschichte: write tcp 172.17.107.170:46208->91.198.174.192:443: write: connection reset by peer
+de,Yangtsee,Philosophie,7,-1,error: get 'https://de.wikipedia.org/wiki/Yangtsee': 404 Not Found
+de,Yokohama,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Yuppie,Philosophie,7,-1,error: loop detected
+de,Zar,Philosophie,7,16,failure
+de,Zahnarzt,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+de,Zorro,Philosophie,7,10,failure

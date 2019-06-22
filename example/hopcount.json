@@ -1,0 +1,26 @@
+[
+  {
+    "lang": "de",
+    "source": "Medizin",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "en",
+    "source": "Competition",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "fr",
+    "source": "Pigeon",
+    "target": "Philosophie",
+    "expected": 7
+  },
+  {
+    "lang": "ru",
+    "source": "Достопримечательность",
+    "target": "Философия",
+    "expected": 7
+  }
+]

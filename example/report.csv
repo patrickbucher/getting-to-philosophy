@@ -1,0 +1,16 @@
+de,Tatsache,Philosophie,7,7,success
+en,Cheese,Philosophy,7,15,failure
+fr,Langue,Philosophie,7,7,success
+ru,Достопримечательность,Философия,7,18,failure
+de,Zürich,Philosophie,7,-1,error: stopped after 20 hops without reaching target
+en,Pig,Philosophy,7,12,failure
+fr,Gridley_(Iowa),Philosophie,7,14,failure
+ru,Наука,Философия,7,7,success
+de,Zwillingsparadoxon,Philosophie,7,-1,error: loop detected
+en,Pig,Philosophy,7,12,failure
+fr,Journalisme,Philosophie,7,12,failure
+ru,Афины,Философия,7,-1,error: loop detected
+de,Käse,Philosophie,7,5,failure
+en,Competition,Philosophy,7,7,success
+fr,Agriculture_du_Tarn,Philosophie,7,-1,error: unable to extract first link of https://fr.wikipedia.org/wiki/Réflexion
+ru,Университет,Философия,7,-1,error: loop detected

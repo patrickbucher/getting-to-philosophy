@@ -1,0 +1,16 @@
+body {
+    margin: 1em auto;
+    padding: 0 1em;
+    font-family: sans-serif;
+    max-width: 800px;
+    min-width: 400px;
+}
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+.tt {
+    text-align: left;
+    hyphens: none;
+    font-family: mono;
+}

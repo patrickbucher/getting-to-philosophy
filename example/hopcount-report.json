@@ -1,0 +1,34 @@
+[
+  {
+    "lang": "de",
+    "source": "Medizin",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": 7,
+    "result": "success"
+  },
+  {
+    "lang": "en",
+    "source": "Competition",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": -1,
+    "result": "error: unable to extract first link of https://en.wikipedia.org/wiki/Entity"
+  },
+  {
+    "lang": "fr",
+    "source": "Pigeon",
+    "target": "Philosophie",
+    "expected": 7,
+    "actual": 6,
+    "result": "failure"
+  },
+  {
+    "lang": "ru",
+    "source": "Достопримечательность",
+    "target": "Философия",
+    "expected": 7,
+    "actual": 18,
+    "result": "failure"
+  }
+]
