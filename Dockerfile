@@ -1,4 +1,4 @@
-FROM golang:1.12.4-alpine AS builder
+FROM golang:1.14.0-alpine AS builder
 LABEL maintainer="patrick.bucher@stud.hslu.ch"
 RUN apk add --no-cache ca-certificates git
 COPY firstlink.go /src/
